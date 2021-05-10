@@ -1,0 +1,24 @@
+//@import "animation";
+
+$black: #4D5264;
+$grey: #9BA0B4;
+
+@mixin clear-link {
+  text-decoration: none;
+}
+
+@mixin animation {
+  transition: all .1s ease-in-out;
+}
+
+/****************************/
+/****************************/
+/****************************/
+
+
+
+@import "icon";
+@import "base";
+@import "main";
+@import "media";
+@import "modal";

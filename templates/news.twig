@@ -1,0 +1,70 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+
+    <div class="c-page">
+        <div class="c-title-layout">
+            <h2 class="c-title">Новости</h2>
+        </div>
+        <section class="news">
+            <ul class="news-list">
+                {# START performances-list__item#}
+                <li class="swiper-slide news-list__item">
+                    <div class="news-card">
+                        <div class="news-card__img">
+                            <img src="./src/img/news-img-1.jpg" alt="">
+                        </div>
+                        <div class="news-card__body">
+
+                            <div class="news-card__title">
+                                <a href="#">В Архдраме очередная премьера — «Карамазовы. Мытарь»</a>
+                            </div>
+                            <div class="news-card-time">
+                                <span class="news-card-time__text">12.04.21</span>
+                            </div>
+                            <div class="news-card__text">
+                                <p>
+                                    Стать свидетелем расследования великой тайны зрители Архангельского театра драмы имени М.В. Ломоносова смогут 7 и 8 мая на премьере спектакля «КАРАМАЗОВЫ.МЫТАРЬ».
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                {# END performances-list__item#}
+                {# START performances-list__item#}
+                <li class="swiper-slide news-list__item">
+                    <div class="news-card">
+                        <div class="news-card__img">
+                            <img src="./src/img/news-img-2.jpg" alt="">
+                        </div>
+                        <div class="news-card__body">
+
+                            <div class="news-card__title">
+                                <a href="#">Спектакль по произведению Федора Абрамова покажут студенты Архангельского колледжа культуры и искусства</a>
+                            </div>
+                            <div class="news-card-time">
+                                <span class="news-card-time__text">12.04.21</span>
+                            </div>
+                            <div class="news-card__text">
+                                <p>
+                                    В рамках проекта «Поле экспериментов» студенты Архангельского областного колледжа культуры и искусства покажут на камерной сцене Архангельского театра драмы им. М.В. Ломоносова спектакль «Женская доля». Показ состоится 25 апреля.                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                {# END performances-list__item#}
+            </ul>
+        </section>
+        <div class="c-btn-layout c-btn-layout--center">
+            <a href="#" class="c-btn c-btn-default">показать еще</a>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}

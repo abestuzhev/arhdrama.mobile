@@ -1,0 +1,76 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+    <div class="c-page">
+        <div class="c-title-layout">
+            <h2 class="c-title">Люди театра</h2>
+        </div>
+        <section class="troupe">
+            <ul class="troupe-list">
+                <li class="troupe-list__item">
+                    <div class="troupe-card">
+                        <div class="troupe-card__img">
+                            <img src="./src/img/troupe-img-1.jpg" alt="">
+                        </div>
+                        <div class="troupe-card__body">
+                            <a href="#" class="troupe-card__title"><span>Елена</span> <span>Смородинова</span></a>
+                            <div class="troupe-card__text">Заслуженная артистка России</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="troupe-list__item">
+                    <div class="troupe-card">
+                        <div class="troupe-card__img">
+                            <img src="./src/img/troupe-img-2.jpg" alt="">
+                        </div>
+                        <div class="troupe-card__body">
+                            <a href="#" class="troupe-card__title"><span>Людмила</span> <span>Советова</span></a>
+                            <div class="troupe-card__text">Заслуженная артистка России</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="troupe-list__item">
+                    <div class="troupe-card">
+                        <div class="troupe-card__img">
+                            <img src="./src/img/troupe-img-3.jpg" alt="">
+                        </div>
+                        <div class="troupe-card__body">
+                            <a href="#" class="troupe-card__title"><span>Мария</span> <span>Беднарчик</span></a>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="troupe-list__item">
+                    <div class="troupe-card">
+                        <div class="troupe-card__img">
+                            <img src="./src/img/troupe-img-4.jpg" alt="">
+                        </div>
+                        <div class="troupe-card__body">
+                            <a href="#" class="troupe-card__title"><span>Сергей</span> <span>Чуркин</span></a>
+                            <div class="troupe-card__text">Заслуженный артист России</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="troupe-list__item">
+                    <div class="troupe-card">
+                        <div class="troupe-card__img">
+                            <img src="./src/img/troupe-img-5.jpg" alt="">
+                        </div>
+                        <div class="troupe-card__body">
+                            <a href="#" class="troupe-card__title"><span>Михаил</span> <span>Андреев</span></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <div class="c-btn-layout c-btn-layout--center">
+            <a href="#" class="c-btn c-btn-default">показать еще</a>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}

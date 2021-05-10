@@ -1,0 +1,85 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+
+    <div class="c-page">
+        <div class="c-title-layout">
+            <h2 class="c-title">Cпектакли</h2>
+        </div>
+        <section class="performances">
+            <ul class="performances-list">
+                {# START performances-list__item#}
+                <li class="performances-list__item">
+                    <div class="performances-card">
+                        <div class="performances-card__img">
+                            <img src="./src/img/performances-img-1.jpg" alt="">
+                        </div>
+                        <div class="performances-card__body">
+                            <div class="performances-card__title">
+                                <a href="#">Царь Эдип. Прозрение</a>
+                                <span class="performances-card__label">16+</span>
+                            </div>
+                            <div class="performances-card__text">
+                                <p>Трагедия (средний формат)</p>
+                                <p>Софокл</p>
+                                <p>Режиссёр — Андрей Тимошенко</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {# END performances-list__item#}
+
+                {# START performances-list__item#}
+                <li class="performances-list__item">
+                    <div class="performances-card">
+                        <div class="performances-card__img">
+                            <img src="./src/img/performances-img-2.jpg" alt="">
+                        </div>
+                        <div class="performances-card__body">
+                            <div class="performances-card__title">
+                                <a href="#">Леди Макбет</a>
+                                <span class="performances-card__label">16+</span>
+                            </div>
+                            <div class="performances-card__text">
+                                <p>Реставрация в одном действии</p>
+                                <p>Поэма — А. Твардовский</p>
+                                <p>Алексей Ермилышев</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {# END performances-list__item#}
+
+                {# START performances-list__item#}
+                <li class="performances-list__item">
+                    <div class="performances-card">
+                        <div class="performances-card__img">
+                            <img src="./src/img/performances-img-4.jpg" alt="">
+                        </div>
+                        <div class="performances-card__body">
+                            <div class="performances-card__title">
+                                <a href="#">Спасти камер-юнкера Пушкина</a>
+                                <span class="performances-card__label">16+</span>
+                            </div>
+                            <div class="performances-card__text">
+                                <p>История одного возможного подвига (основная сцена)</p>
+                                <p>М. Хейфец</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {# END performances-list__item#}
+
+            </ul>
+        </section>
+        <div class="c-btn-layout c-btn-layout--center">
+            <a href="#" class="c-btn c-btn-default">показать еще</a>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}
