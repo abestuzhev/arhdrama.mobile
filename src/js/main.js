@@ -1,7 +1,3 @@
-
-const collectionSlideResult = document.querySelectorAll('.fail-slider-img__item');
-const collectionSlide = document.querySelectorAll('.fail-slider-img__item');
-
 /****************************/
 const headerMenuBtn = document.querySelector('.header-menu');
 const menuMobile = document.querySelector('.menu-mobile');
@@ -87,24 +83,22 @@ const documentWidth = (document.documentElement.clientWidth); // ширина м
 
 $(function () {
 
-  //*************************
-  function changeFailText(){
-    if($(window).width() <= 1000){
-      $('.fail-title').text('Почему интернет-магазины не достигают результатов от продвижения ?');
-    }else {
-      $('.fail-title').text('Многие интернет-магазины не достигают результатов от продвижения');
-    }
-  }
 
-  $(window).resize(function(){
-    changeFailText();
+  /*c-dropdown-menu*/
+  $(document).on('click', '.js-dropdown-menu .c-dropdown-menu__value', function (e) {
+    e.preventDefault();
+    $(this).parent().toggleClass("is-show");
+    $(this).siblings('.c-dropdown-menu-list').slideToggle();
   });
-  //*************************
 
+  $(document).on('click', '.js-dropdown', function (e) {
+    e.preventDefault();
+    $(this).parent().toggleClass("is-show");
+    $(this).siblings().slideToggle();
+  });
+  /**/
 
-
-  var $html = $('html');
-  var $header = $('.header-layout');
+  const $html = $('html');
   //
   $('.js-phone-mask').mask('+7(000)000-00-00', {clearIfNotMatch: true});
 
@@ -147,6 +141,8 @@ $(function () {
 
 
 
+
+
   $(document).on('click', '.js-popup-close', function (e) {
     e.preventDefault();
     $(this).parents('.mfp-wrap').removeClass('is-visible');
@@ -174,45 +170,35 @@ $(function () {
     $('.menu-mobile').toggleClass('is-visible');
   });
 
-  $(document).on('click', '.js-show-efficiency', function (e) {
-    e.preventDefault();
-    $('.efficiency-popup').toggleClass('is-visible');
-    // $('.efficiency-popup').slideToggle('slow');
-  });
-
-  $(document).on('click', '.menu-mobile__close', function (e) {
-    e.preventDefault();
-    $('.menu-mobile').removeClass('is-visible');
-  });
 
 
 
   //
   //
-  $('.header-menu__link, .banner-arrow__icon, .header-logo a').on('click', function(event) {
-    event.preventDefault();
+  // $('.header-menu__link, .banner-arrow__icon, .header-logo a').on('click', function(event) {
+  //   event.preventDefault();
+  //
+  //     // Store hash
+  //     var hash = this.hash;
+  //     var heightHeader = $('.section-header').height();
+  //     var heightHash = $(hash).offset().top - heightHeader ;
+  //
+  //
+  //     $('html, body').animate({
+  //
+  //       scrollTop: heightHash
+  //
+  //     }, 800);
+  // });
 
-      // Store hash
-      var hash = this.hash;
-      var heightHeader = $('.section-header').height();
-      var heightHash = $(hash).offset().top - heightHeader ;
-
-
-      $('html, body').animate({
-
-        scrollTop: heightHash
-
-      }, 800);
-  });
-
-  $('.header-logo a').on('click', function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-
-      scrollTop: $('html').offset().top
-
-    }, 300);
-  });
+  // $('.header-logo a').on('click', function(event) {
+  //   event.preventDefault();
+  //   $('html, body').animate({
+  //
+  //     scrollTop: $('html').offset().top
+  //
+  //   }, 300);
+  // });
   //
   //
   // /*простые табы*/

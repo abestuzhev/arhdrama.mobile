@@ -71,29 +71,60 @@
 
             </header>
 
-<!-- MAIN -->
-    <div class="banner">
-        <div class="js-slider">
-            <ul class="banner-list swiper-wrapper">
-                
-                <li class="swiper-slide banner-list__item">
-                    <div class="banner-card">
-                        <div class="banner-card__img">
-                            <img src="./src/img/banner-img-1.jpg" alt="">
+
+
+    <div class="c-page">
+        <div class="c-title-layout">
+            <h2 class="c-title">Афиша</h2>
+        </div>
+        <section class="afisha">
+            <div class="afisha-head">
+                <div class="afisha-month">
+                    <a href="#" class="afisha-month__item active">Апрель</a>
+                    <a href="#" class="afisha-month__item">Май</a>
+                    <a href="#" class="afisha-month__item">Июнь</a>
+                </div>
+                <div class="c-dropdown-menu js-dropdown-menu">
+                    <div class="c-dropdown-menu__value">
+                        <span>- Все сцены -</span>
+                        <div class="c-dropdown-menu__icon">
+                            <svg class="c-icon icon-dropdown-bottom">
+                                <use xlink:href="./src/img/icons.svg#icon-dropdown-bottom"/>
+                            </svg>
                         </div>
-                        <div class="banner-card__body">
-                            <div class="banner-card-time">
-                                <span class="banner-card-time__text">25 февраля 2021</span>
+                    </div>
+                    <div class="c-dropdown-menu-list">
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Абрамовский зал</a>
+                        </div>
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Основная сцена</a>
+                        </div>
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Камерная сцена</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="afisha-list">
+                
+                <li class="afisha-list__item">
+                    <div class="afisha-card">
+                        <div class="afisha-card-time">
+                            <span class="afisha-card-time__text">29.04  Чт / 17:00</span>
+                            <span class="afisha-card__label">16+</span>
+                        </div>
+                        <div class="afisha-card__body">
+                            <div class="afisha-card__title">
+                                <a href="#">Сказка о царе Салтане</a>
                             </div>
-                            <div class="banner-card__title">
-                                <h2>НЕВИДИМКА, ДВОЙНИК, ПЕРЕСМЕШНИК...</h2>
-                                <span class="banner-card__label">16+</span>
+                            <div class="afisha-card__text">
+                                <p>Трагедия (средний формат)</p>
+                                <p>Софокл</p>
+                                <p>Режиссёр — Андрей Тимошенко</p>
                             </div>
-                            <div class="c-line"></div>
-                            <div class="banner-card__text">
-                                <p>Музыкально-поэтический моноспектакль на стихотворения М. Цветаевой</p>
-                            </div>
-                            <div class="banner-card__btn">
+                            <div class="afisha-card__btn">
                                 <a href="#" class="c-btn c-btn-primary">
                                     <span class="c-btn-grid">
                                     <svg class="c-icon icon-buy">
@@ -103,30 +134,28 @@
                                     </span>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </li>
                 
+
                 
-                <li class="swiper-slide banner-list__item">
-                    <div class="banner-card">
-                        <div class="banner-card__img">
-                            <img src="./src/img/banner-img-1.jpg" alt="">
+                <li class="afisha-list__item">
+                    <div class="afisha-card">
+                        <div class="afisha-card-time">
+                            <span class="afisha-card-time__text">30.04  Пт / 18:00</span>
+                            <span class="afisha-card__label">16+</span>
                         </div>
-                        <div class="banner-card__body">
-                            <div class="banner-card-time">
-                                <span class="banner-card-time__text">25 февраля 2021</span>
+                        <div class="afisha-card__body">
+                            <div class="afisha-card__title">
+                                <a href="#">Гроза</a>
                             </div>
-                            <div class="banner-card__title">
-                                <h2>НЕВИДИМКА, ДВОЙНИК, ПЕРЕСМЕШНИК...</h2>
-                                <span class="banner-card__label">16+</span>
+                            <div class="afisha-card__text">
+                                <p>Трагедия (средний формат)</p>
+                                <p>Софокл</p>
+                                <p>Режиссёр — Андрей Тимошенко</p>
                             </div>
-                            <div class="c-line"></div>
-                            <div class="banner-card__text">
-                                <p>Музыкально-поэтический моноспектакль на стихотворения М. Цветаевой</p>
-                            </div>
-                            <div class="banner-card__btn">
+                            <div class="afisha-card__btn">
                                 <a href="#" class="c-btn c-btn-primary">
                                     <span class="c-btn-grid">
                                     <svg class="c-icon icon-buy">
@@ -136,250 +165,19 @@
                                     </span>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </li>
                 
+
+
             </ul>
-            <div class="swiper-pagination"></div>
+        </section>
+        <div class="c-btn-layout c-btn-layout--center">
+            <a href="#" class="c-btn c-btn-default">показать еще</a>
         </div>
     </div>
 
-
-
-
-
-    <section class="performances">
-        <div class="c-title-layout">
-            <h2 class="c-title">Cпектакли</h2>
-            <div class="c-btn-layout">
-                <a href="#" class="c-btn c-btn-default">Афиша</a>
-                <a href="#" class="c-btn c-btn-default">Все Спектакли</a>
-            </div>
-        </div>
-        <div class="js-slider">
-            <ul class="performances-list swiper-wrapper">
-                
-                <li class="swiper-slide performances-list__item">
-                    <div class="performances-card">
-                        <div class="performances-card__img">
-                            <img src="./src/img/performances-img-1.jpg" alt="">
-                        </div>
-                        <div class="performances-card__body">
-                            <div class="performances-card-time">
-                                <span class="performances-card-time__text">21 марта  19:00 </span>
-                                <span class="performances-card__label">16+</span>
-                            </div>
-                            <div class="performances-card__title">
-                                <a href="#">Царь Эдип. Прозрение</a>
-                            </div>
-                            <div class="performances-card__text">
-                                <p>Трагедия (средний формат)</p>
-                                <p>Софокл</p>
-                                <p>Режиссёр — Андрей Тимошенко</p>
-                            </div>
-                            <div class="performances-card__btn">
-                                <a href="#" class="c-btn c-btn-primary">
-                                    <span class="c-btn-grid">
-                                    <svg class="c-icon icon-buy">
-                                        <use xlink:href="./src/img/icons.svg#icon-buy"/>
-                                    </svg>
-                                    <span>купить билет</span>
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </li>
-                
-                
-                <li class="swiper-slide performances-list__item">
-                    <div class="performances-card">
-                        <div class="performances-card__img">
-                            <img src="./src/img/performances-img-2.jpg" alt="">
-                        </div>
-                        <div class="performances-card__body">
-                            <div class="performances-card-time">
-                                <span class="performances-card-time__text">21 марта  19:00 </span>
-                                <span class="performances-card__label">16+</span>
-                            </div>
-                            <div class="performances-card__title">
-                                <a href="#">Царь Эдип. Прозрение</a>
-                            </div>
-                            <div class="performances-card__text">
-                                <p>Трагедия (средний формат)</p>
-                                <p>Софокл</p>
-                                <p>Режиссёр — Андрей Тимошенко</p>
-                            </div>
-                            <div class="performances-card__btn">
-                                <a href="#" class="c-btn c-btn-primary">
-                            <span class="c-btn-grid">
-                            <svg class="c-icon icon-buy">
-                                <use xlink:href="./src/img/icons.svg#icon-buy"/>
-                            </svg>
-                            <span>купить билет</span>
-                            </span>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </li>
-                
-                
-                <li class="swiper-slide performances-list__item">
-                    <div class="performances-card">
-                        <div class="performances-card__img">
-                            <img src="./src/img/performances-img-3.jpg" alt="">
-                        </div>
-                        <div class="performances-card__body">
-                            <div class="performances-card-time">
-                                <span class="performances-card-time__text">21 марта  19:00 </span>
-                                <span class="performances-card__label">16+</span>
-                            </div>
-                            <div class="performances-card__title">
-                                <a href="#">Царь Эдип. Прозрение</a>
-                            </div>
-                            <div class="performances-card__text">
-                                <p>Трагедия (средний формат)</p>
-                                <p>Софокл</p>
-                                <p>Режиссёр — Андрей Тимошенко</p>
-                            </div>
-                            <div class="performances-card__btn">
-                                <a href="#" class="c-btn c-btn-primary">
-                            <span class="c-btn-grid">
-                            <svg class="c-icon icon-buy">
-                                <use xlink:href="./src/img/icons.svg#icon-buy"/>
-                            </svg>
-                            <span>купить билет</span>
-                            </span>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </li>
-                
-
-            </ul>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <section class="news">
-        <div class="c-title-layout">
-            <h2 class="c-title">Новости</h2>
-            <div class="c-btn-layout">
-                <a href="#" class="c-btn c-btn-default">Все новости</a>
-            </div>
-        </div>
-        <div class="js-slider">
-            <ul class="news-list swiper-wrapper">
-                
-                <li class="swiper-slide news-list__item">
-                    <div class="news-card">
-                        <div class="news-card__img">
-                            <img src="./src/img/news-img-1.jpg" alt="">
-                        </div>
-                        <div class="news-card__body">
-
-                            <div class="news-card__title">
-                                <a href="#">В Архдраме очередная премьера — «Карамазовы. Мытарь»</a>
-                            </div>
-                            <div class="news-card-time">
-                                <span class="news-card-time__text">12.04.21</span>
-                            </div>
-                            <div class="news-card__text">
-                                <p>
-                                    Стать свидетелем расследования великой тайны зрители Архангельского театра драмы имени М.В. Ломоносова смогут 7 и 8 мая на премьере спектакля «КАРАМАЗОВЫ.МЫТАРЬ».
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </li>
-                
-                
-                <li class="swiper-slide news-list__item">
-                    <div class="news-card">
-                        <div class="news-card__img">
-                            <img src="./src/img/news-img-2.jpg" alt="">
-                        </div>
-                        <div class="news-card__body">
-
-                            <div class="news-card__title">
-                                <a href="#">Спектакль по произведению Федора Абрамова покажут студенты Архангельского колледжа культуры и искусства</a>
-                            </div>
-                            <div class="news-card-time">
-                                <span class="news-card-time__text">12.04.21</span>
-                            </div>
-                            <div class="news-card__text">
-                                <p>
-                                    В рамках проекта «Поле экспериментов» студенты Архангельского областного колледжа культуры и искусства покажут на камерной сцене Архангельского театра драмы им. М.В. Ломоносова спектакль «Женская доля». Показ состоится 25 апреля.                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </li>
-                
-
-
-            </ul>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <section class="subscription">
-        <div class="subscription-body">
-            <h3 class="subscription-title">Подпишись  на наши новости</h3>
-            <form action="" class="c-form">
-                <div class="c-form-item">
-                    <input type="text" class="c-input" placeholder="Введите email">
-                </div>
-                <div class="c-form-item">
-                    <div class="c-btn-layout c-btn-layout--center">
-                        <button type="submit" class="c-btn c-btn-primary">Подписаться</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <section class="troupe">
-        <div class="c-title-layout">
-            <h2 class="c-title">Труппа</h2>
-
-            <div class="c-btn-layout">
-                <a href="#" class="c-btn c-btn-default">Все актеры</a>
-            </div>
-        </div>
-        <ul class="troupe-list">
-            <li class="troupe-list__item">
-                <div class="troupe-card">
-                    <div class="troupe-card__img">
-                        <img src="./src/img/troupe-img-1.jpg" alt="">
-                    </div>
-                    <div class="troupe-card__body">
-                        <a href="#" class="troupe-card__title"><span>Елена</span> <span>Смородинова</span></a>
-                        <div class="troupe-card__text">Заслуженная артистка России</div>
-                    </div>
-                </div>
-            </li>
-            <li class="troupe-list__item">
-                <div class="troupe-card">
-                    <div class="troupe-card__img">
-                        <img src="./src/img/troupe-img-2.jpg" alt="">
-                    </div>
-                    <div class="troupe-card__body">
-                        <a href="#" class="troupe-card__title"><span>Людмила</span> <span>Советова</span></a>
-                        <div class="troupe-card__text">Заслуженная артистка России</div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section>
 
 
 

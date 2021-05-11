@@ -1,0 +1,123 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+
+    <div class="c-subpage">
+        <div class="c-breadcrumbs">
+            <a href="#" class="c-breadcrumbs-item">Главная</a>
+            <a href="#" class="c-breadcrumbs-item">Спектакли</a>
+        </div>
+        <div class="c-title-layout c-title-layout--left">
+            <div class="c-title-label">13/04 в 18:00</div>
+            <h2 class="c-title">ЦАРЬ ЭДИП. ПРОЗРЕНИЕ</h2>
+        </div>
+        <section class="description">
+
+            <div class="description-head">
+                <div class="description-img">
+                    <img src="./src/img/performances-img-1.jpg" alt="">
+                </div>
+                <div class="c-btn-layout">
+                    <a href="#" class="c-btn c-btn-primary c-btn-fullwidth">
+                    <span class="c-btn-grid">
+                        <svg class="c-icon icon-buy">
+                            <use xlink:href="./src/img/icons.svg#icon-buy"/>
+                        </svg>
+                        <span>купить билет</span>
+                    </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="description-body">
+                <div class="tabs-menu">
+                    <a href="#about" class="active">О спектакле</a>
+                    <a href="#actors">Актерский состав</a>
+                </div>
+                <div class="tab">
+                    <div class="tab-content" id="about">
+                        <ul>
+                            <li>
+                                <b>Трагедия</b> (средний формат)
+                            </li>
+                            <li>
+                                Автор — <b>Софокл</b>
+                            </li>
+                            <li>
+                                Режиссёр — Андрей Тимошенко
+                            </li>
+                            <li>
+                                Продолжительность — <b>1 час 50 минут</b>
+                                (без антракта)
+                            </li>
+                        </ul>
+                        <p>
+                            Трагедия Софокла в одном действии. Плакать трагическими слезами — значит размышлять. Спектакль был признан лауреатом VIII международного фестиваля «Театр. Чехов. Ялта» и высоко оценён экспертным жюри (2016 г.)
+                            <i>Премьера состоялась 6 апреля 2014 года</i>
+                        </p>
+                        <div class="c-quote">
+                            <div class="c-quote-head">
+                                <div class="c-quote-img">
+                                    <img src="./src/img/avatar-img-2.jpg" alt="">
+                                </div>
+                                <div class="c-quote-text">Иосиф Райхельгауз, народный артист России:</div>
+                            </div>
+                            <div class="c-quote-body">
+                                <p>
+                                    «Это талантливый спектакль. Я смотрел его с неослабевающим интересом. У вас мощная команда. Это всегда видно, когда работает талантливый ансамбль, когда все друг друга слышат, чувствуют. Андрей Тимошенко — талантливый режиссёр. Он понимает профессию. Я бы этот спектакль не поменял бы даже на десяток московских антреприз, которые по стране собирают большую кассу!»
+                                </p>
+                                <p>
+                                    <b>Гран-при ХХ фестиваля античной культуры
+                                        «Боспорские агоны-2018» (г. Керчь)</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="actors">
+                        <ul>
+                            <li>
+                                <b>Эдип — </b> <a href="">Александр Дубинин, </a><a href="">Дмитрий Беляков</a>
+                            </li>
+                            <li>
+                                <b>Иокаста —</b> засл.арт.РФ<a href=""> Елена Смородинова</a>
+                            </li>
+                            <li>
+                                <b>Креонт —</b> <a href="">Иван Братушев</a>
+                            </li>
+                            <li>
+                                <b>Вестник — </b> <a href="">Алексей Ковтун </a>
+                            </li>
+                            <li>
+                                <b>Тиресий —</b> <a href="">Александр Дубинин, </a><a href="">Дмитрий Беляков</a>
+                            </li>
+                            <li>
+                                <b>Народ города Фивы: </b>
+                                <a href="">Мария Беднарчик,</a>
+                                <a href="">Мария Беднарчик,</a>
+                                <a href="">Юрий Прошин,</a>
+                                <a href="">Татьяна Сердотецкая,</a>
+                            </li>
+
+                        </ul>
+                        <div class="c-line-dotted"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+        <div class="c-btn-layout c-btn-layout--center">
+            <a href="#" class="c-btn c-btn-default">Назад</a>
+        </div>
+
+
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}

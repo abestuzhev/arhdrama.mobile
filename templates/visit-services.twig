@@ -1,0 +1,91 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+
+    <div class="c-page">
+        <div class="c-title-layout">
+            <h2 class="c-title">Визит в театр</h2>
+        </div>
+        <section class="services">
+            <div class="services-head">
+                <div class="c-dropdown-menu js-dropdown-menu">
+                    <div class="c-dropdown-menu__value">
+                        <span>Услуги</span>
+                        <div class="c-dropdown-menu__icon">
+                            <svg class="c-icon icon-dropdown-bottom">
+                                <use xlink:href="./src/img/icons.svg#icon-dropdown-bottom"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="c-dropdown-menu-list">
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Продажа билетов</a>
+                        </div>
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Театральный этикет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="services-list">
+                {# START services-list__item#}
+                <li class="services-list__item">
+                    <a href="#" class="services-card">
+                        <div class="services-card__img">
+                            <img src="./src/img/services-img-1.jpg" alt="">
+                        </div>
+                        <div class="services-card__title">
+                            Экскурсии >
+                        </div>
+                    </a>
+                </li>
+                {# END services-list__item#}
+                {# START services-list__item#}
+                <li class="services-list__item">
+                    <a href="#" class="services-card">
+                        <div class="services-card__img">
+                            <img src="./src/img/services-img-2.jpg" alt="">
+                        </div>
+                        <div class="services-card__title">
+                            Фотосессия >
+                        </div>
+                    </a>
+                </li>
+                {# END services-list__item#}
+                {# START services-list__item#}
+                <li class="services-list__item">
+                    <a href="#" class="services-card">
+                        <div class="services-card__img">
+                            <img src="./src/img/services-img-3.jpg" alt="">
+                        </div>
+                        <div class="services-card__title">
+                            Реклама в театре >
+                        </div>
+                    </a>
+                </li>
+                {# END services-list__item#}
+                {# START services-list__item#}
+                <li class="services-list__item">
+                    <a href="#" class="services-card">
+                        <div class="services-card__img">
+                            <img src="./src/img/services-img-4.jpg" alt="">
+                        </div>
+                        <div class="services-card__title">
+                            Прокат биноклей >
+                        </div>
+                    </a>
+                </li>
+                {# END services-list__item#}
+
+
+            </ul>
+        </section>
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}

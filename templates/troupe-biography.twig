@@ -1,0 +1,66 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+
+    <div class="c-subpage">
+        <div class="c-breadcrumbs">
+            <a href="#" class="c-breadcrumbs-item">Главная</a>
+            <a href="#" class="c-breadcrumbs-item">Люди театра</a>
+        </div>
+        <div class="c-title-layout c-title-layout--left">
+            <h2 class="c-title">Артур Чемакин</h2>
+        </div>
+        <section class="biography">
+            <div class="biography-body">
+                <div class="biography-img">
+                    <img src="./src/img/biography-img-1.jpg" alt="">
+                </div>
+                <div class="biography-info">
+                    <div class="tabs-menu">
+                        <a href="#biography" class="active">Биография</a>
+                        <a href="#roles">Роли репертуара:</a>
+                    </div>
+                    <div class="tab">
+                        <div class="tab-content" id="biography">
+                            <b>
+                                Учился в Архангельском колледже культуры
+                                и искусства
+                            </b>
+                            <p>
+                                В Архангельском театре драмы им. М. В. Ломоносова с 2019 г. Роли в Архангельском театре драмы (в снятых с репертуара спектаклях): Заморыш (портной) («Сон в летнюю ночь» У. Шекспира).
+                            </p>
+                        </div>
+                        <div class="tab-content" id="roles">
+                            <ul>
+                                <li>
+                                    <b>Датский народ, Придворный —</b> <a href="">(«Огниво» Г.Х. Андерсена)</a>
+                                </li>
+                                <li>
+                                    <b>Франциско, солдат; 3-й актёр-Луциан; Озрик — </b> <a href="">(«Гамлет» У. Шекспира) </a>
+                                </li>
+                                <li>
+                                    <b>Стрелец, Боярин, Викинг, Стражник, Тень, Восток —</b> <a href="">(«Садко» А. Экаревой)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <div class="c-btn-layout c-btn-layout--center">
+            <a href="#" class="c-btn c-btn-default">Назад</a>
+        </div>
+
+
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}

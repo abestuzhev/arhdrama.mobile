@@ -1,0 +1,115 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+
+    <div class="c-page">
+        <div class="c-title-layout">
+            <h2 class="c-title">Афиша</h2>
+        </div>
+        <section class="afisha">
+            <div class="afisha-head">
+                <div class="afisha-month">
+                    <a href="#" class="afisha-month__item active">Апрель</a>
+                    <a href="#" class="afisha-month__item">Май</a>
+                    <a href="#" class="afisha-month__item">Июнь</a>
+                </div>
+                <div class="c-dropdown-menu js-dropdown-menu">
+                    <div class="c-dropdown-menu__value">
+                        <span>- Все сцены -</span>
+                        <div class="c-dropdown-menu__icon">
+                            <svg class="c-icon icon-dropdown-bottom">
+                                <use xlink:href="./src/img/icons.svg#icon-dropdown-bottom"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="c-dropdown-menu-list">
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Абрамовский зал</a>
+                        </div>
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Основная сцена</a>
+                        </div>
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Камерная сцена</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="afisha-list">
+                {# START performances-list__item#}
+                <li class="afisha-list__item">
+                    <div class="afisha-card">
+                        <div class="afisha-card-time">
+                            <span class="afisha-card-time__text">29.04  Чт / 17:00</span>
+                            <span class="afisha-card__label">16+</span>
+                        </div>
+                        <div class="afisha-card__body">
+                            <div class="afisha-card__title">
+                                <a href="#">Сказка о царе Салтане</a>
+                            </div>
+                            <div class="afisha-card__text">
+                                <p>Трагедия (средний формат)</p>
+                                <p>Софокл</p>
+                                <p>Режиссёр — Андрей Тимошенко</p>
+                            </div>
+                            <div class="afisha-card__btn">
+                                <a href="#" class="c-btn c-btn-primary">
+                                    <span class="c-btn-grid">
+                                    <svg class="c-icon icon-buy">
+                                        <use xlink:href="./src/img/icons.svg#icon-buy"/>
+                                    </svg>
+                                    <span>купить билет</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {# END performances-list__item#}
+
+                {# START performances-list__item#}
+                <li class="afisha-list__item">
+                    <div class="afisha-card">
+                        <div class="afisha-card-time">
+                            <span class="afisha-card-time__text">30.04  Пт / 18:00</span>
+                            <span class="afisha-card__label">16+</span>
+                        </div>
+                        <div class="afisha-card__body">
+                            <div class="afisha-card__title">
+                                <a href="#">Гроза</a>
+                            </div>
+                            <div class="afisha-card__text">
+                                <p>Трагедия (средний формат)</p>
+                                <p>Софокл</p>
+                                <p>Режиссёр — Андрей Тимошенко</p>
+                            </div>
+                            <div class="afisha-card__btn">
+                                <a href="#" class="c-btn c-btn-primary">
+                                    <span class="c-btn-grid">
+                                    <svg class="c-icon icon-buy">
+                                        <use xlink:href="./src/img/icons.svg#icon-buy"/>
+                                    </svg>
+                                    <span>купить билет</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {# END performances-list__item#}
+
+
+            </ul>
+        </section>
+        <div class="c-btn-layout c-btn-layout--center">
+            <a href="#" class="c-btn c-btn-default">показать еще</a>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}

@@ -1,0 +1,89 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+
+    <div class="c-page">
+        <div class="c-title-layout">
+            <h2 class="c-title">Вопрос - Ответ</h2>
+        </div>
+        <section class="question">
+            <div class="question-list">
+                <div class="question-list__item">
+                    <div class="question-card">
+                        <div class="question-card__title js-dropdown">
+                            <span>Как пройти в библиотеку,
+                                Чтобы почитать правила этикета</span>
+                            <div class="question-card__icon">
+                                <svg class="c-icon icon-dropdown-bottom">
+                                    <use xlink:href="./src/img/icons.svg#icon-dropdown-bottom"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="question-card__text">
+                            <p>
+                                Постарайтесь приходить вовремя, а лучше заранее до начала спектакля. Вход зрителей в театр, работа персонала и буфета начинается за один час до спектакля. В Архангельском драматическом, как и в каждом театре, работает «правило третьего звонка». Прозвенит третий звонок и вход в зрительный зал будет запрещён.
+                            </p>
+                            <p>
+                                Театр начинается с вешалки. Нельзя входить в зрительный зал в верхней одежде или вносить ее в зрительный зал. Верхнюю одежду необходимо сдать в гардероб. В случае утери номерка возмещается его стоимость в размере 500 рублей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-list__item">
+                    <div class="question-card">
+                        <div class="question-card__title js-dropdown">
+                            <span>
+                                Образец вопроса пример
+в несколько строк. Viverra eros, sodales maecenas in senectus mollis. Pellentesque arcu in sapien aliquet odio eleifend elit sapien.
+                            </span>
+                            <div class="question-card__icon">
+                                <svg class="c-icon icon-dropdown-bottom">
+                                    <use xlink:href="./src/img/icons.svg#icon-dropdown-bottom"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="question-card__text">
+                            <p>
+                                Постарайтесь приходить вовремя, а лучше заранее до начала спектакля. Вход зрителей в театр, работа персонала и буфета начинается за один час до спектакля. В Архангельском драматическом, как и в каждом театре, работает «правило третьего звонка». Прозвенит третий звонок и вход в зрительный зал будет запрещён.
+                            </p>
+                            <p>
+                                Театр начинается с вешалки. Нельзя входить в зрительный зал в верхней одежде или вносить ее в зрительный зал. Верхнюю одежду необходимо сдать в гардероб. В случае утери номерка возмещается его стоимость в размере 500 рублей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="c-form">
+                <h3 class="c-form-title">Задать свой вопрос</h3>
+                <div class="c-form__item">
+                    <input type="text" class="c-input" placeholder="Ваше Имя *">
+                </div>
+                <div class="c-form__item">
+                    <input type="text" class="c-input" placeholder="Введите Ваш email">
+                </div>
+                <div class="c-form__item">
+                    <textarea name="" id="" rows="10" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="c-form__item">
+                    <img src="./src/img/captcha-img.jpg" alt="">
+                </div>
+                <div class="c-btn-layout c-btn-layout--center">
+                    <button class="c-btn c-btn-primary c-btn-fullwidth">Отправить вопрос</button>
+                </div>
+            </form>
+
+
+
+        </section>
+
+
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}

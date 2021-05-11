@@ -469,6 +469,200 @@
   }
 }
 
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.afisha {
+  margin-bottom: 3em;
+
+  &-list {
+    &__item {
+      width: 100%;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #E5E5E5;
+    }
+  }
+
+  &-card {
+    width: 100%;
+    padding: 1em;
+    min-height: 16.5em;
+
+    &__body {
+      position: relative;
+    }
+
+    &-time {
+      display: flex;
+      align-items: center;
+      margin-bottom: .2em;
+
+      &__text {
+        font-size: 1.8em;
+        line-height: 1.2em;
+        color: #000;
+        margin-right: .6em;
+      }
+
+      .performances-card__label {
+        font-size: .8em;
+        line-height: 2.2em;
+        text-align: center;
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 1.2em;
+
+      a {
+        display: inline;
+        font-family: "Minion Pro", Serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.3em;
+        line-height: 1.2em;
+        text-decoration-line: underline;
+        color: #000000;
+        margin-right: .4em;
+      }
+
+
+      /* black */
+
+      color: #000000;
+    }
+
+    &__label {
+      display: inline-block;
+      font-size: 1.4em;
+      line-height: 1.5em;
+      padding: 0 .5em;
+      color: #A71A37;
+      border: 1px solid #A71A37;
+      border-radius: 150px;
+    }
+
+    &__btn {
+      position: absolute;
+      right: -6.35em;
+      top: 3em;
+      transform: rotate(270deg);
+
+      .c-btn {
+        padding: .7em;
+
+        .c-icon {
+          margin-right: .2em;
+        }
+      }
+    }
+
+    &__text {
+      font-size: 1.2em;
+      p {
+        margin: 0;
+        margin-bottom: .68em;
+      }
+    }
+  }
+
+  &-head {
+    padding: 0 1em;
+  }
+
+  &-month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+
+    &__item {
+      @include clear-link();
+      font-family: "Minion Pro", serif;
+      font-weight: bold;
+      font-size: 1.8em;
+      line-height: 1em;
+      color: #4F5164;
+
+      &.active {
+        color: #A71A37;
+      }
+    }
+  }
+}
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.contact {
+  padding: 0 1em;
+  &-img {
+    margin-bottom: 2em;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-body {
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 2em;
+  }
+
+  &-info {
+    &__item {
+      margin-bottom: 2em;
+    }
+
+    &__title {
+      font-size: 1.2em;
+    }
+
+    &__phone {
+      margin-bottom: .5em;
+      a {
+        display: block;
+        @include clear-link();
+        font-family: "Minion Pro", serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.4em;
+        line-height: 1.1em;
+      }
+    }
+  }
+
+  &-time {
+    margin-bottom: 2em;
+    &__title {
+      font-family: "Minion Pro", serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.4em;
+      line-height: 1.1em;
+      margin-bottom: .2em;
+    }
+    &__list {
+      font-size: 1.2em;
+      span {
+        font-family: "Minion Pro", serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.3em;
+        line-height: 1.1em;
+      }
+    }
+  }
+}
+
+
 /*------------------------------------*/
 /*------------------------------------*/
 /*------------------------------------*/
@@ -572,6 +766,149 @@
 }
 
 
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.biography {
+  padding: 0 1em;
+  margin-bottom: 3em;
+  &-img {
+    width: 100%;
+    margin-bottom: 2em;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-body {
+
+  }
+}
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.question {
+  padding: 0 1em;
+
+  &-list {
+    &__item {
+      margin-bottom: 2em;
+      border-bottom: 1px solid #E5E5E5;
+    }
+  }
+
+  &-card {
+    &__title {
+      font-family: "Minion Pro";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.9em;
+      line-height: 1.2em;
+      text-decoration-line: underline;
+      padding-right: .9em;
+      position: relative;
+      padding-bottom: .6em;
+    }
+
+    &__icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+
+      .icon-dropdown-bottom {
+        font-size: .6em;
+      }
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &.is-show {
+      .question-card__icon {
+        transform: translateY(-50%) rotate(180deg);
+      }
+
+    }
+  }
+}
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.post {
+  padding: 0 1em;
+  &-img {
+    margin-bottom: 2em;
+  }
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.description {
+  padding: 0 1em;
+  &-head {
+    margin-bottom: 2em;
+  }
+  &-img {
+    margin-bottom: 2em;
+  }
+}
+
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.services {
+  padding: 0 1em;
+
+  &-list {
+    &__item {
+      margin-bottom: 2em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-card {
+    display: block;
+    @include clear-link();
+    position: relative;
+    &__img {
+      height: 17em;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__title {
+      @include clear-link();
+      color: #000000;
+      position: absolute;
+      left: -.6em;
+      bottom: .6em;
+      text-decoration: underline;
+      font-family: "Minion Pro", Serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.9em;
+      line-height: 1.1em;
+      padding: .65em 1.1em;
+      background-color: #fff;
+      z-index: 5;
+      border: 1px dashed #4F5164;
+    }
+
+  }
+}
 /*------------------------------------*/
 /*------------------------------------*/
 /*------------------------------------*/

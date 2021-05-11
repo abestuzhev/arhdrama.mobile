@@ -1,0 +1,71 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+
+    <div class="c-page">
+        <div class="c-title-layout">
+            <h2 class="c-title">Контакты</h2>
+        </div>
+        <section class="contact">
+            <div class="contact-body">
+                <div class="contact-img">
+                    <img src="./src/img/contact-img-1.jpg" alt="">
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info__item">
+                        <div class="contact-info__title">Касса театра</div>
+                        <div class="contact-info__phone">
+                            <a href="tel:+78182208434">8 (8182) 20-84-34</a>
+                            <a href="tel:+79914695480">+7 (991) 469-54-80</a>
+                        </div>
+                        <div class="contact-info__note">с 10:30 до 19:30 ; (14:00-14:30 - обед) </div>
+                    </div>
+                    <div class="contact-info__item">
+                        <div class="contact-info__title">Администраторы</div>
+                        <div class="contact-info__phone">
+                            <a href="tel:+78182412057">8 (8182) 41-20-57</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-time">
+                    <div class="contact-time__title">Начало спектаклей:</div>
+                    <ul class="contact-time__list">
+                        <li>Детские спектакли: <span>11:00</span></li>
+                        <li>Пн.-Чт.: <span>18:30</span></li>
+                        <li>Пт.: <span>18:30</span></li>
+                        <li>Сб.-Вс.: <span>17:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <form action="" class="c-form">
+                <h3 class="c-form-title">Задать свой вопрос</h3>
+                <div class="c-form__item">
+                    <input type="text" class="c-input" placeholder="Ваше Имя *">
+                </div>
+                <div class="c-form__item">
+                    <input type="text" class="c-input" placeholder="Введите Ваш email">
+                </div>
+                <div class="c-form__item">
+                    <textarea name="" id="" rows="10" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="c-form__item">
+                    <img src="./src/img/captcha-img.jpg" alt="">
+                </div>
+
+                <div class="c-btn-layout c-btn-layout--center">
+                    <button class="c-btn c-btn-primary c-btn-fullwidth">Отправить вопрос</button>
+                </div>
+            </form>
+
+
+        </section>
+        
+
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}
