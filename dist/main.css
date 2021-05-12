@@ -77,15 +77,23 @@ body {
   font-size: 10px; }
 
 .js-slider {
-  overflow: hidden;
   padding-bottom: 2em;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 a[href^=tel] {
   color: #4D5264; }
 
 a {
   color: #A61A37; }
+
+h3 {
+  font-family: "Minion Pro", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.9em;
+  line-height: 1.2em;
+  margin-bottom: .9em; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -101,6 +109,21 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+.c-list li {
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 1em;
+  padding-bottom: 1em; }
+  .c-list li:last-child {
+    border: none; }
+
+.c-list p {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin: 0; }
+
+.c-accent {
+  color: #A71A37; }
 
 p {
   font-size: 1.2em;
@@ -226,6 +249,19 @@ i {
 
 .c-quote-body {
   margin-bottom: 2em; }
+
+.c-attention {
+  background: #A71A37;
+  color: #fff;
+  margin: 0 -1em 2em;
+  padding: 1em; }
+  .c-attention-text {
+    font-size: 1.2em;
+    line-height: 1.1em;
+    padding: 1.2em;
+    border: 1px dotted #fff; }
+    .c-attention-text span {
+      font-weight: 700; }
 
 .c-btn {
   font-family: 'Open Sans', sans-serif;
@@ -365,6 +401,14 @@ i {
   .tab-content li {
     margin-bottom: .6em; }
 
+.c-note {
+  border: 1px dashed #4F5164;
+  padding: .4em;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase; }
+
 /*-----------------*/
 .c-line {
   width: 8em;
@@ -375,6 +419,11 @@ i {
     width: 100%;
     height: 1px;
     border-bottom: 1px dotted #4F5164;
+    margin-bottom: 2em; }
+  .c-line-fullwidth {
+    width: 100%;
+    height: 0.1em;
+    background: #E5E5E5;
     margin-bottom: 2em; }
 
 .c-title {
@@ -492,12 +541,17 @@ textarea,
 .swiper-button-prev {
   -webkit-transition: all .4s ease;
   -o-transition: all .4s ease;
-  transition: all .4s ease; }
+  transition: all .4s ease;
+  width: 1em;
+  height: 2em; }
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
     -webkit-transform: translateY(-6px);
         -ms-transform: translateY(-6px);
             transform: translateY(-6px); }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 2.8em; }
 
 /****************************/
 /****************************/
@@ -1266,9 +1320,8 @@ textarea,
 /*------------------------------------*/
 /*------------------------------------*/
 .post {
-  padding: 0 1em; }
-  .post-img {
-    margin-bottom: 2em; }
+  padding: 0 1em;
+  margin-bottom: 2em; }
 
 /*------------------------------------*/
 /*------------------------------------*/
@@ -1276,8 +1329,6 @@ textarea,
 .description {
   padding: 0 1em; }
   .description-head {
-    margin-bottom: 2em; }
-  .description-img {
     margin-bottom: 2em; }
 
 /*------------------------------------*/
@@ -1340,6 +1391,58 @@ textarea,
   .subscription-body {
     border: 2px solid #4A4C5C;
     padding: 1.6em 2em 2.7em; }
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.tickets {
+  padding: 0 1em; }
+  .tickets__title {
+    font-family: "Minion Pro", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.9em;
+    line-height: 1.2em;
+    margin: 0 0 .5em 0;
+    text-decoration: underline; }
+  .tickets-head {
+    margin-bottom: 1em; }
+  .tickets-info {
+    margin-bottom: 2em; }
+    .tickets-info__title {
+      font-family: "Minion Pro", serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.9em;
+      line-height: 1.2em;
+      margin: 0 0 .5em 0;
+      text-decoration: underline; }
+    .tickets-info-list__item p {
+      margin-bottom: .7em; }
+  .tickets-people-list__item {
+    margin-bottom: 1em; }
+    .tickets-people-list__item p {
+      margin-bottom: .7em; }
+  .tickets-people__name {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-bottom: 0.1em; }
+  .tickets-people__phone {
+    display: block;
+    font-size: 1em;
+    line-height: 1.3em; }
+
+.etiquette {
+  padding: 0 1em; }
+  .etiquette-img {
+    width: 100%; }
+    .etiquette-img img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 2em; }
+  .etiquette h3 {
+    text-decoration: underline; }
 
 /****************************/
 /****************************/

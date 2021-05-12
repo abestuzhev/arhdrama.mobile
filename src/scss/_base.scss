@@ -10,9 +10,13 @@ body {
 }
 
 .js-slider {
-  overflow: hidden;
   padding-bottom: 2em;
   position: relative;
+  overflow: hidden;
+
+  .swiper-wrapper {
+    // overflow: hidden;
+  }
 }
 
 a[href^=tel] {
@@ -21,6 +25,15 @@ a[href^=tel] {
 
 a {
   color: #A61A37;
+}
+
+h3 {
+  font-family: "Minion Pro", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.9em;
+  line-height: 1.2em;
+  margin-bottom: .9em;
 }
 
 * {
@@ -38,6 +51,29 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.c-list { 
+  
+  li {
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: 0;
+  }
+}
+
+.c-accent {
+  color: #A71A37;
 }
 
 p {
@@ -200,6 +236,23 @@ i {
 
   &-body {
     margin-bottom: 2em;
+  }
+}
+.c-attention {
+  background: #A71A37;
+  color: #fff;
+  margin: 0 -1em 2em;
+  padding: 1em;
+  
+
+  &-text {
+    font-size: 1.2em;
+    line-height: 1.1em;
+    padding: 1.2em;
+    border: 1px dotted #fff;
+    span {
+      font-weight: 700;
+    }
   }
 }
 
@@ -396,6 +449,15 @@ i {
     }
   }
 }
+
+.c-note {
+  border: 1px dashed #4F5164;
+  padding: .4em;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 /*-----------------*/
 
 .c-line {
@@ -408,6 +470,13 @@ i {
     width: 100%;
     height: 1px;
     border-bottom: 1px dotted #4F5164;
+    margin-bottom: 2em;
+  }
+
+  &-fullwidth {
+    width: 100%;
+    height: 0.1em;
+    background: #E5E5E5;
     margin-bottom: 2em;
   }
 }
@@ -561,6 +630,12 @@ textarea,
   transition: all .4s ease;
   &:hover {
     transform: translateY(-6px);
+  }
+  width: 1em;
+  height: 2em;
+
+  &::after {
+    font-size: 2.8em;
   }
 }
 

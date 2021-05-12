@@ -1,0 +1,140 @@
+<!-- HEADER -->
+{% include "./layout/header.twig" %}
+{% block page %}
+
+
+    <div class="c-page">
+        <section class="tickets">
+            <div class="tickets-head">
+                <div class="c-dropdown-menu js-dropdown-menu">
+                    <div class="c-dropdown-menu__value">
+                        <span>Услуги</span>
+                        <div class="c-dropdown-menu__icon">
+                            <svg class="c-icon icon-dropdown-bottom">
+                                <use xlink:href="./src/img/icons.svg#icon-dropdown-bottom"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="c-dropdown-menu-list">
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Продажа билетов</a>
+                        </div>
+                        <div class="c-dropdown-menu-list__item">
+                            <a href="#">Театральный этикет</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tickets-img">
+                    <img src="./src/img/contact-img-1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="tickets-body">
+                <div class="tickets-info">
+                    <h3 class="tickets-info__title">Кассы театра</h3>
+                    <ul class="tickets-info-list">
+                        <li class="tickets-info-list__item">
+                            <p>
+                                <b>Адрес:</b> г. Архангельск, Петровский парк, 1
+                            </p>                            
+                        </li>
+                        <li class="tickets-info-list__item">
+                            <p>
+                                <b>Телефон/факс кассы:</b> +7 8182- 20-84-34
+                            </p>                            
+                        </li>
+                        <li class="tickets-info-list__item">
+                            <p>
+                                <b>Администраторы:</b> +7 (8182) 41-20-57
+                            </p>                            
+                        </li>
+                        <li class="tickets-info-list__item">
+                            <p>
+                                <b>Часы работы:</b> Ежедневно с 10 до 19.30 часов (14:00-14:30 - перерыв)
+                            </p>                            
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="question-list">
+                    <div class="question-list__item">
+                        <div class="question-card">
+                            <div class="question-card__title js-dropdown">
+                                <span>Система скидок при покупке билетов через кассу: </span>
+                                <div class="question-card__icon">
+                                    <svg class="c-icon icon-dropdown-bottom">
+                                        <use xlink:href="./src/img/icons.svg#icon-dropdown-bottom"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="question-card__text">
+                                <ul class="c-list">
+                                    <li>
+                                        <p>
+                                            <b>Ветераны Великой Отечественной Войны</b>
+                                        </p>
+                                            <p>Документ: Удостоверение ветерана ВОВ</p>
+                                            <p><span class="c-accent">Скидка: 100%</span></p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <b>Бывшие несовершеннолетние узники концлагерей, гетто, других мест принудительного содержания, созданных фашистами и их союзниками в период Второй мировой войны</b>
+                                        </p>
+                                        <p>Документ: Документ (удостоверение), подтверждающий  принадлежность к соответствующей категории</p>
+                                        <p><span class="c-accent">Скидка: 100%</span></p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <b>Школьники (группа от 20 человек)</b>
+                                        </p>
+                                        <p>Документ: Коллективная заявка</p>
+                                        <p><span class="c-accent">Скидка: 10%</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-attention">
+                    <div class="c-attention-text">
+                    <b>ВНИМАНИЕ!</b> Указанные скидки
+                    не распространяются на первые 
+                    5 премьерных показов спектакля. 
+                    Все скидки распространяются только 
+                    при покупке билетов в кассе. 
+                    </div>
+                </div>
+                <div class="tickets-people">
+                    <h3 class="tickets-people__title">Уполномоченные по распространению билетов:</h3>
+                    <ul class="tickets-people-list">
+                        <li class="tickets-people-list__item">
+                            <div class="tickets-people__name"><b>Людмила Павловна Юдинцева:</b></в>
+                            <a class="tickets-people__phone" href="tel:+79115512221">8-911-551-22-21</a>
+                        </li>
+                        <li class="tickets-people-list__item">
+                            <div class="tickets-people__name"><b>Любовь Борисовна Пекишева:</b></в>
+                            <a class="tickets-people__phone" href="tel:+79115512221">8-911-551-22-21</a>
+                        </li>
+                        <li class="tickets-people-list__item">
+                            <div class="tickets-people__name"><b>Лариса Аркадьевна Михальчук:</b></в>
+                            <a class="tickets-people__phone" href="tel:+79115512221">8-911-551-22-21</a>
+                        </li>
+                        <li class="tickets-people-list__item">
+                            <div class="tickets-people__name"><b>Людмила Николаевна Василенко:</b></в>
+                            <a class="tickets-people__phone" href="tel:+79115512221">8-911-551-22-21</a>
+                        </li>
+                        <li class="tickets-people-list__item">
+                            <div class="tickets-people__name"><b>Ирина Павловна Калачёва (г.Северодвинск):</b></в>
+                            <a class="tickets-people__phone" href="tel:+79115512221">8-911-551-22-21</a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+        </section>
+    </div>
+
+
+
+{% endblock %}
+<!-- FOOTER -->
+{% include "./layout/footer.twig" %}

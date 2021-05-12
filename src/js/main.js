@@ -17,7 +17,6 @@ const resultsSlider = new Swiper('.js-slider', {
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
-    // type: 'fraction',
   },
 
   navigation: {
@@ -26,16 +25,13 @@ const resultsSlider = new Swiper('.js-slider', {
   },
 
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1
     },
-    // when window width is >= 480px
     730: {
       slidesPerView: 2,
       spaceBetween: 30
     },
-    // when window width is >= 640px
     1200: {
       slidesPerView: 4,
       spaceBetween: 40

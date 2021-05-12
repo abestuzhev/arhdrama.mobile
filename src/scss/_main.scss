@@ -841,8 +841,9 @@
 /*------------------------------------*/
 .post {
   padding: 0 1em;
+  margin-bottom: 2em;
   &-img {
-    margin-bottom: 2em;
+   
   }
 }
 
@@ -855,7 +856,7 @@
     margin-bottom: 2em;
   }
   &-img {
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
   }
 }
 
@@ -940,4 +941,87 @@
     padding: 1.6em 2em 2.7em;
   }
 
+}
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.tickets {
+  padding: 0 1em;
+
+  &__title {
+    font-family: "Minion Pro", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.9em;
+    line-height: 1.2em;
+    margin: 0 0 .5em 0;
+    text-decoration: underline;
+  }
+
+  &-head {
+    margin-bottom: 1em;
+  }
+
+  &-info {
+    margin-bottom: 2em;
+    &__title {
+      font-family: "Minion Pro", serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.9em;
+      line-height: 1.2em;
+      margin: 0 0 .5em 0;
+      text-decoration: underline;
+    }
+
+    &-list {
+      &__item {
+        p {
+          margin-bottom: .7em;
+        }
+      }
+    }
+  }
+
+  &-people {
+    &-list {
+      &__item {
+        margin-bottom: 1em;
+        p {
+          margin-bottom: .7em;
+        }
+      }
+    }
+
+    &__name {
+      font-size: 1.3em;
+      line-height: 1.3em;
+      margin-bottom: 0.1em;
+    }
+    
+    &__phone {
+      display: block;
+      font-size: 1em;
+      line-height: 1.3em;
+    }
+  }
+}
+
+.etiquette {
+  padding: 0 1em;
+
+  &-img {
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 2em;
+    }
+  }
+
+  h3 {
+    text-decoration: underline;
+  }
 }
