@@ -18,8 +18,12 @@
   .troupe {
     &-list {
       display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
 
       &__item {
+        width: 50%;
+        padding: 0 1em;
         &:nth-child(even) {
           .troupe-card {
             &__img {
@@ -30,11 +34,23 @@
               text-align: left;
             }
 
+
+
             &__body {
               padding-left: .8em;
             }
           }
         }
+      }
+    }
+
+    &-card {
+      &__title {
+        font-size: 1.5em;
+      }
+
+      &__text {
+        font-size: 1.2em;
       }
     }
   }

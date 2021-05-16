@@ -596,7 +596,8 @@ textarea,
 
 .swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 10px;
+  bottom: 1em;
+  font-size: 10px;
 }
 
 .swiper-pagination-bullet {
