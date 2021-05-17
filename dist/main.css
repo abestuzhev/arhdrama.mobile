@@ -38,6 +38,12 @@
 .icon-logo {
   fill: #A61A37; }
 
+.icon-logo-red {
+  display: inline-block;
+  font-size: 5.5em;
+  width: 1em;
+  height: 1em; }
+
 .icon-email {
   display: inline-block;
   font-size: 1.3em;
@@ -978,6 +984,9 @@ textarea,
       @media (min-width: 730px) {
         .performances-card__img {
           height: 50vw; } }
+      @media (min-width: 1200px) {
+        .performances-card__img {
+          height: 26vw; } }
       .performances-card__img img {
         width: 100%;
         height: 100%;
@@ -1212,6 +1221,9 @@ textarea,
       @media (min-width: 730px) {
         .news-card__img {
           height: 50vw; } }
+      @media (min-width: 1200px) {
+        .news-card__img {
+          height: 26vw; } }
       .news-card__img img {
         width: 100%;
         height: 100%;
